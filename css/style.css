@@ -160,11 +160,13 @@ nav ul li a:hover {
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
+    cursor: pointer;
+    position: relative;
 }
 
 .experience-item:hover {
-    transform: translateY(-5px);
+    transform: rotateY(180deg);
 }
 
 .experience-item img {
@@ -180,6 +182,23 @@ nav ul li a:hover {
 .experience-item p {
     font-size: 14px;
     color: #666;
+}
+
+.experience-content {
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Mostrar contenido en la parte posterior */
+.experience-item:hover .experience-content {
+    opacity: 0;
+}
+
+.experience-item:hover .hidden {
+    display: block;
 }
 
 /* Sección de Contacto */
@@ -233,6 +252,39 @@ nav ul li a:hover {
     color: #666;
 }
 
+/* Estilo del formulario de contacto */
+.contact-section form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section input[type="email"],
+.contact-section textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-section button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #0056b3;
+}
 
 /* Pie de página */
 footer {
@@ -241,4 +293,57 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
+}
+
+/* Efecto de giro 3D para las tarjetas de experiencia laboral */
+.experience-item {
+    perspective: 1000px; /* Añade perspectiva para el efecto 3D */
+    width: 100%; /* Asegúrate de que las tarjetas tengan el mismo ancho */
+    height: 250px; /* Ajusta la altura según sea necesario */
+}
+
+.experience-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Permite que los hijos se comporten en 3D */
+    transition: transform 0.6s; /* Suaviza la animación */
+}
+
+.experience-item:hover .experience-inner {
+    transform: rotateY(180deg); /* Gira la tarjeta */
+}
+
+.experience-front,
+.experience-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta la cara trasera cuando no está girada */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Configuración de la parte frontal */
+.experience-front {
+    background-color: #fff; /* Fondo de la parte frontal */
+}
+
+/* Configuración de la parte trasera */
+.experience-back {
+    background-color: hsl(0, 0%, 100%); /* Fondo de la parte trasera */
+    color: #fff; /* Color del texto en la parte trasera */
+    transform: rotateY(180deg); /* Gira la parte trasera para que esté oculta por defecto */
+    text-align: center;
+    backface-visibility: hidden; /* Evita que el texto se vea al revés */
+}
+
+/* Asegúrate de que el texto no esté rotado */
+.experience-back p {
+    transform: rotateY(0deg); /* Asegúrate de que el texto no esté rotado */
 }

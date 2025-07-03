@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Alonso Garrido</title>
+    <title>Alonso - Front End</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,102 +17,116 @@
                     <li><a href="#about">Sobre Mí</a></li>
                     <li><a href="#experience">Experiencia</a></li>
                     <li><a href="#contact">Contacto</a></li>
+                    <li><a href="cv/curriculum.pdf" class="btn" download>Descargar CV</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <section class="hero-section" style="background-image: url(img/banners.jpg);">
+        <div class="hero-content">
+            <h1>Bienvenido a mi Sitio Web CV</h1>
+            <p>Soy Ingeniero en Ciberseguridad, apasionado por el avance tecnologico y con experiencias en distintos rubros del areá.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn">Contáctame</a>
+                <a href="#experience" class="btn">Ver Experiencia</a>
+            </div>
+        </div>
+        <img src="img/logociber.png" alt="Imagen de héroe" class="hero-image">
+    </section>
 
-        <section class="hero-section" style="background-image: url('img/banners.jpg');">
-            <div class="hero-content">
-                <h1>Alonso Garrido</h1>
-                <p>Ingeniero en Ciberseguridad</p>
-                <div class="hero-actions">
-                    <a href="cv/curriculum.pdf" class="btn" download>Descargar CV</a>
-                    <a href="#contact" class="btn">Contactar</a>
+<section id="about" class="about-section">
+    <h2>Sobre Mí</h2>
+    <p>Hola, soy <strong>Alonso</strong>, ingeniero en ciberseguridad con una pasión por proteger sistemas y datos en un mundo digital en constante evolución. Mi objetivo es asegurar que las organizaciones puedan operar de manera segura y eficiente, minimizando riesgos y vulnerabilidades.</p>
+    <p>A lo largo de mi carrera, he desarrollado habilidades en análisis de riesgos, implementación de medidas de seguridad y respuesta a incidentes. Me especializo en:</p>
+    <ul>
+        <li>Auditorías de seguridad y pruebas de penetración</li>
+        <li>Desarrollo e implementación de políticas de seguridad</li>
+        <li>Educación y concienciación sobre ciberseguridad para empleados</li>
+        <li>Monitoreo y análisis de amenazas en tiempo real</li>
+    </ul>
+    <p>Además de mis habilidades técnicas, tengo un fuerte compromiso con el aprendizaje continuo y la mejora profesional. Me gusta mantenerme actualizado sobre las últimas tendencias y tecnologías en ciberseguridad, participando en conferencias y cursos especializados.</p>
+    <p>Estoy emocionado por la oportunidad de contribuir a un entorno digital más seguro y colaborar con equipos que comparten mi visión. Si deseas saber más sobre mi trabajo o discutir posibles colaboraciones, ¡no dudes en contactarme!</p>
+</section>
+
+
+    <section id="experience" class="experience-section">
+        <h2>Experiencia Laboral</h2>
+        <div class="experience-grid">
+            <div class="experience-item">
+                <div class="experience-inner">
+                    <div class="experience-front">
+                        <img src="img/falabella.png" alt="falabella">
+                        <h3>Desarrollador Web en Falabella</h3>
+                    </div>
+                    <div class="experience-back">
+                        <p>Desarrollé la web de Falabella y la diseñe con un equipo de trabajo</p>
+                    </div>
                 </div>
             </div>
-            <img src="img/profile.jpg" alt="" class="hero-image">
-        </section>
-
-
-        <section id="about" class="about-section">
-            <h2>Sobre Mí</h2>
-            <p>Soy Alonso Garrido, un joven de 21 años con amplia experiencia en el sector retail, comida rápida y cadenas de supermercados. Resido en la Región Metropolitana de Santiago, Chile.</p>
-            <p>Me apasiona el trabajo en equipo, la organización y el servicio al cliente. Disfruto de liderar proyectos y ayudar a las personas a alcanzar sus objetivos.</p>
-        </section>
-
-        <section id="experience" class="experience-section">
-            <h2>Experiencia Laboral</h2>
-            <div class="experience-grid">
-                <div class="experience-item">
-                    <img src="img/mcdonals.png" alt="McDonald's">
-                    <h3>McDonald's - Arcos Dorados S.A</h3>
-                    <p>2024 - 2025</p>
-                </div>
-                <div class="experience-item">
-                    <img src="img/bix.png" alt="BIX">
-                    <h3>BIX</h3>
-                    <p>2023 - 2024</p>
-                </div>
-                <div class="experience-item">
-                    <img src="img/falabella.png" alt="Falabella">
-                    <h3>Falabella</h3>
-                    <p>2022 - 2023</p>
-                </div>
-                <div class="experience-item">
-                    <img src="img/dominos.png" alt="Domino's Pizza">
-                    <h3>Domino's Pizza</h3>
-                    <p>2021 (7 meses)</p>
-                </div>
-                <div class="experience-item">
-                    <img src="img/santaisabel.png" alt="Santa Isabel">
-                    <h3>Santa Isabel</h3>
-                    <p>2023 (5 meses)</p>
-                </div>
-                <div class="experience-item">
-                    <img src="img/tarragona.png" alt="Tarragona">
-                    <h3>Tarragona</h3>
-                    <p>2022 (1 año y medio)</p>
-                </div>
-                <div class="experience-item">
-                    <img src="img/ripley.png" alt="Ripley">
-                    <h3>Ripley</h3>
-                    <p>2022 (3 meses)</p>
-                </div>
-                <div class="experience-item">
-                    <img src="img/byn.png" alt="B&N Producciones">
-                    <h3>B&N Producciones</h3>
-                    <p>2018 - 2021</p>
+            <div class="experience-item">
+                <div class="experience-inner">
+                    <div class="experience-front">
+                        <img src="img/ripley.png" alt="ripley">
+                        <h3>Diseñador en Ripley</h3>
+                    </div>
+                    <div class="experience-back">
+                        <p>Diseñé interfaces de usuario atractivas y funcionales.</p>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <h2>contactame</h2>
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Correo electrónico</h3>
-                    <p>correo@ciberseguridad.com</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <h3>telefono</h3>
-                    <p>+56 (9) 87654321</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Ubicacion</h3>
-                    <p>>123 Calle Principal, Santiago, Chile</p>
+            <div class="experience-item">
+                <div class="experience-inner">
+                    <div class="experience-front">
+                        <img src="img/mcdonals.png" alt="Compañía 3">
+                        <h3>Especialista en Ciberseguridad para MCdonals</h3>
+                    </div>
+                    <div class="experience-back">
+                        <p>Implementé medidas de seguridad para proteger sistemas.</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="experience-item">
+                <div class="experience-inner">
+                    <div class="experience-front">
+                        <img src="img/freelancer.png" alt="Freelancer">
+                        <h3>Freelancer</h3>
+                    </div>
+                    <div class="experience-back">
+                        <p>Trabajé en proyectos independientes para diversos clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contáctame</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Contáctame a este Correo Electrónico</h3>
+                <p>AlonsoInacap@ciberseguridad.com</p>
+            </div>
+            <div class="contact-item">
+                <form onsubmit="event.preventDefault(); sendEmail();">
+                    <input type="email" id="email" placeholder="Tu correo electrónico" required>
+                    <textarea id="message" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="contact-item">
+                <h3> Horario de atención:</h3>
+                <p> Lunes a Viernes: 7:30 - 16:00</p>
+                <p> Sabado y Domingo: NO SE ATIENDE</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2025 Alonso Garrido. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="js/contact.js"></script>
 </body>
 </html>
